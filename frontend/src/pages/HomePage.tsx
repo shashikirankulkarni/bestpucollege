@@ -19,16 +19,17 @@ export function HomePage() {
       <section className="relative overflow-hidden bg-hero-radial">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(255,255,255,0.06),transparent_30%)]" />
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-20 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-24">
-          <div className="rounded-[2rem] border border-white/25 bg-white/96 p-8 shadow-card md:p-10 lg:p-12">
-            <p className="inline-flex rounded-full border border-brand-mist bg-brand-soft px-4 py-2 text-sm font-bold uppercase tracking-[0.25em] text-brand-gold">
+          <div className="rounded-[2rem] border border-white/12 bg-brand-ink p-8 shadow-card md:p-10 lg:p-12">
+            <p className="inline-flex rounded-full border border-white/12 bg-white/10 px-4 py-2 text-sm font-bold uppercase tracking-[0.25em] text-brand-gold">
               Educational Excellence
             </p>
             <h1
-              className="mt-6 max-w-3xl font-display text-4xl font-extrabold leading-tight text-brand-ink sm:text-5xl lg:text-6xl"
+              className="mt-6 max-w-3xl font-display text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl"
+              style={{ color: "#f8fafc" }}
             >
               A professional digital campus experience for admissions, academics, and public trust.
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-brand-slate">
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
               The Best Science & Commerce P.U. College, Jamkhandi is building a modern website
               experience that helps students discover the institute, understand academic streams,
               and begin the admissions journey with clarity.
@@ -42,7 +43,7 @@ export function HomePage() {
               </Link>
               <Link
                 to="/academics"
-                className="rounded-full border border-slate-300 px-6 py-3 text-sm font-bold text-brand-navy transition hover:bg-brand-soft"
+                className="rounded-full border border-white/20 px-6 py-3 text-sm font-bold text-white transition hover:bg-white/10"
               >
                 Explore Academics
               </Link>
@@ -52,10 +53,10 @@ export function HomePage() {
               {heroStats.map((item) => (
                 <div
                   key={item.value}
-                  className="rounded-[1.5rem] border border-slate-200 bg-brand-soft p-5"
+                  className="rounded-[1.5rem] border border-white/10 bg-white/5 p-5"
                 >
                   <p className="font-display text-3xl font-bold text-brand-gold">{item.value}</p>
-                  <p className="mt-2 text-sm leading-6 text-brand-slate">{item.label}</p>
+                  <p className="mt-2 text-sm leading-6 text-slate-300">{item.label}</p>
                 </div>
               ))}
             </div>
