@@ -19,7 +19,7 @@ export function AdmissionsPage() {
 
   return (
     <div>
-      <section className="bg-gradient-to-br from-brand-navy via-brand-blue to-sky-500 py-20 text-white">
+      <section className="bg-gradient-to-br from-brand-navy via-brand-blue to-sky-500 py-14 text-white sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Admissions"
@@ -31,9 +31,9 @@ export function AdmissionsPage() {
             {admissionsSteps.map((item) => (
               <article
                 key={item.step}
-                className="rounded-[1.5rem] border border-white/12 bg-slate-900/18 p-5 backdrop-blur-sm"
+                className="rounded-[1.5rem] border border-white/12 bg-slate-900/18 p-4 backdrop-blur-sm sm:p-5"
               >
-                <p className="font-display text-2xl font-bold text-brand-gold">{item.step}</p>
+                <p className="font-display text-xl font-bold text-brand-gold sm:text-2xl">{item.step}</p>
                 <h3 className="mt-3 font-display text-lg font-bold text-white">{item.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-slate-100/90">{item.description}</p>
               </article>
@@ -42,10 +42,10 @@ export function AdmissionsPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="space-y-6">
-            <div className="rounded-[2rem] bg-brand-ink p-8 text-white shadow-card">
+            <div className="rounded-[2rem] bg-brand-ink p-6 text-white shadow-card sm:p-8">
               <h3 className="font-display text-2xl font-bold">What phase 1 supports</h3>
               <ul className="mt-6 space-y-4 text-sm leading-7 text-slate-200">
                 <li>Online enquiry and application intake</li>
@@ -56,7 +56,7 @@ export function AdmissionsPage() {
               </ul>
             </div>
 
-            <div className="rounded-[2rem] border border-slate-200/80 bg-white p-8 shadow-card-soft">
+            <div className="rounded-[2rem] border border-slate-200/80 bg-white p-6 shadow-card-soft sm:p-8">
               <h3 className="font-display text-2xl font-bold text-brand-ink">
                 Prepare these details
               </h3>
@@ -73,7 +73,7 @@ export function AdmissionsPage() {
 
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="rounded-[2rem] border border-slate-200/80 bg-white p-8 shadow-card-soft"
+            className="rounded-[2rem] border border-slate-200/80 bg-white p-6 shadow-card-soft sm:p-8"
           >
             <h3 className="font-display text-2xl font-bold text-brand-ink">Admissions Enquiry</h3>
             <p className="mt-3 text-sm leading-7 text-brand-slate">
@@ -121,7 +121,7 @@ export function AdmissionsPage() {
 
             <button
               type="submit"
-              className="mt-8 rounded-full bg-brand-blue px-6 py-3 text-sm font-bold text-white transition hover:bg-brand-navy"
+              className="mt-8 w-full rounded-full bg-brand-blue px-6 py-3 text-sm font-bold text-white transition hover:bg-brand-navy sm:w-auto"
             >
               Save Frontend Prototype
             </button>
